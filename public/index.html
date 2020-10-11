@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>YoungChat Community Server</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <ul class="pages">
+      <li class="chat page">
+				<script src="https://raw.githubusercontent.com/Ivan-Feofanov/ws-audio-api/master/dist/ws-audio-api.min.js"></script>
+				<script>
+    var streamer = new WSAudioAPI.Streamer({
+        server: {
+            host: window.location.hostname, //websockets server addres. In this example - localhost
+            port: 443 //websockets server port
+    });
+</script>
+        <div class="chatArea">
+          <ul class="messages"></ul>
+        </div>
+        <input class="inputMessage" placeholder="Send a message..." >Stop stream</button>
+<script>
+    var player = new WSAudioAPI.Player({
+        server: {
+            host: window.location.hostname, //websockets server addres. In this example - localhost
+            port: 5000 //websockets server port
+    });
+</script>
+<button onclick="player.start()">Play stream</button>
+<button onclick="player.stop()">Stop playing</button>
+      </li>
+      <li class="login page">
+        <div class="form">
+          <h3 class="title">What's your username?</h3>
+          <input class="usernameInput" type="text" maxlength="999" />
+        </div>
+      </li>
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

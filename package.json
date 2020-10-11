@@ -1,0 +1,28 @@
+{
+  "//1": "YoungChat",
+  "//2": "The official chat of youngchief btw ツ",
+  "//3": "https://chat.youngchief.tk/",
+  "name": "YoungChat",
+  "version": "0.0.1",
+  "description": "The real YoungChat app :eyes:.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsoning": "^0.8.15",
+    "node-turn": "0.0.6",
+    "socket.io": "^2.3.0",
+    "ws-audio-api": "^0.1.5"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "license": "MIT",
+  "keywords": [
+    "YoungChat",
+    "chat",
+    "cozy"
+  ]
+}
