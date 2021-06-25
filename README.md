@@ -1,3 +1,3 @@
 # YoungChat
 
-Offical chat by **youngchief btw ツ** ;)
+Offical chat for **youngchief btw ツ** ;)
